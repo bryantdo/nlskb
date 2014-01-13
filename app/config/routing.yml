@@ -1,0 +1,4 @@
+nlsnlsdb:
+    resource: "@nlsnlsdbBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,3 @@
+nlsnlsdb_homepage:
+    pattern:  /
+    defaults: { _controller: nlsnlsdbBundle:Default:index }

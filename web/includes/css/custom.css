@@ -19,8 +19,8 @@ section {
 
 .jumbotron {
   text-shadow: black 0.1em 0.1em 0.2em;
-  background: url('/includes/images/maize_crops.jpg') no-repeat center center fixed;
   color:#fff;
+  background: url('/includes/images/maize_crops.jpg') no-repeat center center fixed;
   background-size:cover;
 }
 
@@ -41,6 +41,21 @@ section {
    padding:2px;
    border:2px solid #000;
 }
+
+/* Tool panels
+-------------------------------------------------- */
+.plant-start-panel {
+  background:url('/includes/images/bostonlettuce.png') no-repeat center center;
+}
+.bacteria-start-panel {
+  background:url('/includes/images/ppfmbacteria.png') no-repeat center center;
+}
+.scratch-start-panel {
+  background:url('/includes/images/database_design.png') no-repeat center center;
+}
+
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */

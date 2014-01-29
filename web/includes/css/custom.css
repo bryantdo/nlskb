@@ -11,7 +11,7 @@ body {
 }
 
 section {
-  height:500px;
+  height:450px;
   padding-top:50px;
   padding-bottom:50px;
   overflow:auto;
@@ -53,9 +53,6 @@ section {
 .scratch-start-panel {
   background:url('/includes/images/database_design.png') no-repeat center center;
 }
-
-
-
 
 /* Sticky footer styles
 -------------------------------------------------- */

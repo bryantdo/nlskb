@@ -2,25 +2,25 @@
 
 {% block header %}
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">NewLeaf Symbiotics Knowledge Base</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="nav-home nav-anchor active"><a href="#">Home</a></li>
-          <li class="nav-anchor"><a href="#about">About</a></li>
-          <li class="nav-anchor"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">NewLeaf Symbiotics Knowledge Base</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-home nav-anchor active"><a href="#">Home</a></li>
+        <li class="nav-anchor"><a href="#about">About</a></li>
+        <li class="nav-anchor"><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </div>
+</div>
 {% endblock %}
 
 {% block body %}
@@ -35,7 +35,7 @@
 <div class="container">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">NewLeaf Symbiotics knowledgebase. <span class="text-muted">Explore.</span></h2>
+      <h2 class="featurette-heading">NewLeaf Symbiotics Knowledge Base. <span class="text-muted">Explore.</span></h2>
       <p class="lead">This repository is our portal to NewLeaf Symbiotics proprietary information and knowledge. Use it to mine data, find relationships, and understand our technology.</p>
     </div>
     <div class="col-md-5">
@@ -45,37 +45,81 @@
 </div>
 
 <div class="container">  
-    <hr>  
-    <div class="row">    
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3>Start with plant species.</h3></div>
-            <div class="panel-body plant-start-panel"> Use this tool to interact with our data by first selecting a plant species.
-            </div>
-            <div class="panel-footer text-right"><a href="#" class="btn btn-lg btn-default">Go <span class="glyphicon glyphicon-leaf"></span></a></div>
-          </div>
+  <hr>  
+  <div class="row">    
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Start with plant species.</h3></div>
+        <div class="panel-body plant-start-panel"> Use this tool to interact with our data by first selecting a plant species.
         </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3>Start with PPFM strain.</h3></div>
-            <div class="panel-body bacteria-start-panel">Use this tool to interact with our data by first selecting a PPFM strain.
-            </div>
-            <div class="panel-footer text-right"><a href="#" class="btn btn-lg btn-default">Go <span class="glyphicon glyphicon-leaf"></span></a></div>
-          </div>
+        <div class="panel-footer text-right"><a class="btn btn-lg btn-default" id="plant-miner-button">Go <span class="glyphicon glyphicon-leaf"></span></a></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Start with PPFM strain.</h3></div>
+        <div class="panel-body bacteria-start-panel">Use this tool to interact with our data by first selecting a PPFM strain.
         </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3>Start from scratch.</h3></div>
-            <div class="panel-body scratch-start-panel">Use this tool to interact with our data starting from scratch.
-            </div>
-            <div class="panel-footer text-right"><a href="#" class="btn btn-lg btn-default">Go <span class="glyphicon glyphicon-leaf"></span></a></div>
-          </div>
+        <div class="panel-footer text-right"><a class="btn btn-lg btn-default" id="ppfm-miner-button">Go <span class="glyphicon glyphicon-leaf"></span></a></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Start with trait.</h3></div>
+        <div class="panel-body scratch-start-panel">Use this tool to interact with our data starting from scratch.
         </div>
-    </div><!--/row-->  
-    <hr>
+        <div class="panel-footer text-right"><a class="btn btn-lg btn-default" id="scratch-miner-button">Go <span class="glyphicon glyphicon-leaf"></span></a></div>
+      </div>
+    </div>
+  </div><!--/row-->  
+  <hr>
 </div><!--/container-->
-</div>
-</div>
+
+
+<div class="container hide miner" id="plant-miner">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>NLS Knowledge Base Miner: Plant Species</h3></div>
+          <div class="panel-body">
+
+
+          </div><!--/panel-body-->
+        </div>
+      </div>
+    </div><!--/row-->
+</div><!--/container-->
+
+<div class="container hide miner" id="ppfm-miner">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>NLS Knowledge Base Miner: PPFM Strain</h3></div>
+          <div class="panel-body">
+
+
+          </div><!--/panel-body-->
+        </div>
+      </div>
+    </div><!--/row-->
+</div><!--/container-->
+
+<div class="container hide miner" id="scratch-miner">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>NLS Knowledge Base Miner: From Trait</h3></div>
+          <div class="panel-body">
+
+
+          </div><!--/panel-body-->
+        </div>
+      </div>
+    </div><!--/row-->
+</div><!--/container-->
+
+
+</div><!--/wrap-->
 {% endblock %}
 
 {% block footer %}	
@@ -123,9 +167,24 @@
     });
 
     // Add onclick listener to home page link
-    $('.navbar-brand').click(function() {
+    $(".navbar-brand").click(function() {
       $(".nav-anchor").each(function() { $(this).removeClass("active"); });
-      $('.nav-home').addClass("active");
+      $(".nav-home").addClass("active");
+    });
+
+    $("#plant-miner-button").click(function() {
+      $(".miner").each(function() { $(this).addClass("hide"); });
+      $("#plant-miner").removeClass('hide');
+    });
+
+    $("#ppfm-miner-button").click(function() {
+      $(".miner").each(function() { $(this).addClass("hide"); });
+      $("#ppfm-miner").removeClass('hide');
+    });
+
+    $("#scratch-miner-button").click(function() {
+      $(".miner").each(function() { $(this).addClass("hide"); });
+      $("#scratch-miner").removeClass('hide');
     });
 
   }); // Document ready
